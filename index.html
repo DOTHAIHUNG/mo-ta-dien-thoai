@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .display-none {
+            display: none;
+        }
+    </style>
+    <script src="js.js"></script>
+</head>
+<body>
+<div>
+    <table border="1" cellpadding="3" cellspacing="0">
+        <tr>
+            <td>Nokia</td>
+            <td><input type="button" data-phone="nokia" class="power" onclick="checkStatus1();" value="Power"/></td>
+        </tr>
+        <tr>
+            <td>Status Phone</td>
+            <td><span id="disStaNok"></span></td>
+        </tr>
+        <tr data-phone="nokia">
+            <td>Status Battery</td>
+            <td><span id="disStaBatNok"></span></td>
+        </tr>
+        <tr data-phone="nokia" id="sendSaveNokia">
+            <td><input type="button" data-phone="nokia" class="sendNokia" onclick="sendNokia();" value="Send">
+                <input type="button" data-phone="nokia" class="saveNokia" onclick="saveNokia();" value="Save"></td>
+            <td><input type="text" size="60" id="mesBoxNokia"></td>
+        </tr>
+        <tr id="trashNokia">
+            <td>Thu Nhap</td>
+            <td><p id="thuNhapNokia"></p></td>
+        </tr>
+        <tr data-phone="nokia" id="showChargeNokia">
+            <td><input type="button" data-phone="nokia" class="showNokia" onclick="showNokia();" value="Show">
+                <input type="button" onclick="chargeNokia()" value="Charge" id="chargeNokia"></td>
+            <td><p id="showMesNokia" class="showMes"></p></td>
+        </tr>
+    </table>
+</div>
+<div>
+    <table border="1" cellpadding="3" cellspacing="0">
+        <tr>
+            <td>Iphone</td>
+            <td><input type="button" data-phone="iphone" class="power" onclick="checkStatus2();" value="Power"/></td>
+        </tr>
+        <tr>
+            <td>Status Phone</td>
+            <td><span id="disStaIph"></span></td>
+        </tr>
+        <tr data-phone="iphone">
+            <td>Status Battery</td>
+            <td><span id="disStaBatIph"></span></td>
+        </tr>
+        <tr data-phone="iphone" id="sendSaveIphone">
+            <td><input type="button" data-phone="iphone" class="sendIphone" onclick="sendIphone();" value="Send">
+                <input type="button" data-phone="iphone" class="saveIphone" value="Save"></td>
+            <td><input type="text" size="60" id="mesBoxIphone"></td>
+        </tr>
+        <tr id="trashIphone">
+            <td>Thu Nhap</td>
+            <td><p id="thuNhapIphone"></p></td>
+        </tr>
+        <tr data-phone="iphone" id="showChargeIphone">
+            <td><input type="button" data-phone="iphone" class="showIphone" onclick="showIphone();" value="Show">
+                <input type="button" onclick="chargeIphone();" value="Charge" id="chargeIphone"></td>
+            <td><p id="showMesIphone" class="showMes"></p></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
