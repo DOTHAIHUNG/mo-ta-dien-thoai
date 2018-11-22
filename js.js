@@ -170,6 +170,9 @@ function chargeIphone() {
 function saveNokia() {
     nokia.trashMes();
 }
+function saveIphone() {
+    iphone.trashMes();
+}
 
 function checkStatus1() {
     nokia.onOff();
@@ -178,5 +181,6 @@ function checkStatus1() {
 
 function checkStatus2() {
     iphone.onOff();
+    iphone.showStatus();
 }
 
